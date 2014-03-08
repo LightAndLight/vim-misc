@@ -24,7 +24,7 @@ endfunction
 function! xolox#misc#str#trim(s) " {{{1
   " Trim all whitespace from the start and end of a string (the first
   " argument).
-  return substitute(a:s, '^\_s*\(.\{-}\)\_s*$', '\1', '')
+  return substitute(a:s, '^\_s*%\?\(.\{-}\)\_s*$', '\1', '')
 endfunction
 
 function! xolox#misc#str#indent(text, num_spaces) " {{{1
